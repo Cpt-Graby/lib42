@@ -60,8 +60,18 @@ SRCS_LST	= ft_lstnew.c \
 		  ft_lstiter.c\
 		  ft_lstmap.c
 
+SRCS_READ	= get_next_line.c \
+			  get_next_line_utils.c
+
+SRCS_PRINT	= ft_add.c \
+			  ft_print_h.c \
+			  ft_print_pnt.c \
+			  ft_printf.c
+
 SRCS_NAME	= ${addprefix ft_main/, ${SRCS_MAIN}} \
-		  ${addprefix ft_lst/, ${SRCS_LST}} 
+		  ${addprefix ft_lst/, ${SRCS_LST}} \
+		  ${addprefix ft_read/, ${SRCS_READ}} \
+		  ${addprefix ft_print/, ${SRCS_PRINT}} 
 
 OBJS_NAME 	= ${SRCS_NAME:.c=.o}
 

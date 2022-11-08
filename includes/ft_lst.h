@@ -1,12 +1,11 @@
 
 
-#ifndef T_LST_H
-# define T_LST_H
+#ifndef FT_LST_H
+# define FT_LST_H
 
 typedef struct	s_list
 {
 	void		*content;
-	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
 
