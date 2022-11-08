@@ -8,8 +8,8 @@ AR	= ar rc
 
 CFLAGS	= -Wall -Werror -Wextra
 
-SRC_PATH = src
-OBJ_PATH = obj
+SRC_PATH = srcs
+OBJ_PATH = srcs
 
 SRCS_MAIN	= ft_atoi.c \
 		  ft_bzero.c \
@@ -65,8 +65,8 @@ SRCS_NAME	= ${addprefix ft_main/, ${SRCS_MAIN}} \
 
 OBJS_NAME 	= ${SRCS_NAME:.c=.o}
 
-SRCS = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
-OBJS = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
+SRCS = $(addprefix $(SRC_PATH)/,$(SRCS_NAME))
+OBJS = $(addprefix $(OBJ_PATH)/,$(OBJS_NAME))
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
