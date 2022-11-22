@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_free_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: mura </var/spool/mail/mura>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 10:12:45 by agonelle          #+#    #+#             */
-/*   Updated: 2022/10/13 11:05:27 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/10 14:39:40 by mura              #+#    #+#             */
+/*   Updated: 2022/11/10 15:16:54 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+char	*ft_free_tab(void **tab, int len)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (s[i])
+	while (i < len)
 	{
-		f(i, (s + i));
+		free(tab[i]);
 		i++;
 	}
+	free(tab);
+	return (NULL);
 }

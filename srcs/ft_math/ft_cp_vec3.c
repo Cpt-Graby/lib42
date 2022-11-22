@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_cp_vec3.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 10:12:45 by agonelle          #+#    #+#             */
-/*   Updated: 2022/10/13 11:05:27 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/21 21:52:58 by agonelle          #+#    #+#             */
+/*   Updated: 2022/11/21 21:54:21 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_cp_vec3(t_vec3 point, t_vec3 *new_vec)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		f(i, (s + i));
-		i++;
-	}
+	new_vec->x = point.x;
+	new_vec->y = point.y;
+	new_vec->z = point.z;
 }

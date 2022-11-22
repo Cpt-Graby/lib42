@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_val_in_r.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 10:12:45 by agonelle          #+#    #+#             */
-/*   Updated: 2022/10/13 11:05:27 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/10 15:10:09 by agonelle          #+#    #+#             */
+/*   Updated: 2022/11/10 15:12:14 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+int	ft_val_in_r(int v, int min, int max)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		f(i, (s + i));
-		i++;
-	}
+	if (v >= min && v <= max)
+		return (1);
+	else
+		return (0);
 }

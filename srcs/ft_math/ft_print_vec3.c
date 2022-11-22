@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_print_vec3.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: kino </var/spool/mail/kino>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 10:12:45 by agonelle          #+#    #+#             */
-/*   Updated: 2022/10/13 11:05:27 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/14 14:38:12 by kino              #+#    #+#             */
+/*   Updated: 2022/11/17 19:08:08 by mura             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	print_vec3(t_vec3 vec)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		f(i, (s + i));
-		i++;
-	}
+	ft_printf("(%d,", vec.x);
+	ft_printf("%d,", vec.y);
+	ft_printf("%d)\n", vec.z);
 }
