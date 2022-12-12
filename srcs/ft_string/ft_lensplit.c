@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_tab.c                                      :+:      :+:    :+:   */
+/*   ft_string.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mura </var/spool/mail/mura>                +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 14:39:40 by mura              #+#    #+#             */
-/*   Updated: 2022/11/10 15:16:54 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/30 12:22:19 by agonelle          #+#    #+#             */
+/*   Updated: 2022/11/30 12:37:01 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "../../libft.h"
 
-char	*ft_free_tab(void **tab, int len)
+size_t	ft_lensplit(char **tab)
 {
-	int	i;
+	size_t	len;
+	size_t	i;
 
+	len = 1;
 	i = 0;
-	while (i < len)
+	while (tab[i])
 	{
-		free(tab[i]);
+		len++;
 		i++;
 	}
-	free(tab);
-	return (NULL);
+	return (len);
 }

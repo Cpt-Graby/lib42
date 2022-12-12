@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_tab.c                                      :+:      :+:    :+:   */
+/*   ft_maxlstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mura </var/spool/mail/mura>                +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 14:39:40 by mura              #+#    #+#             */
-/*   Updated: 2022/11/10 15:16:54 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/26 12:18:18 by agonelle          #+#    #+#             */
+/*   Updated: 2022/11/26 12:21:18 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-char	*ft_free_tab(void **tab, int len)
+size_t	ft_maxlstr(char *str1, char *str2)
 {
-	int	i;
+	size_t	len1;
+	size_t	len2;
 
-	i = 0;
-	while (i < len)
-	{
-		free(tab[i]);
-		i++;
-	}
-	free(tab);
-	return (NULL);
+	len1 = ft_strlen(str1);
+	len2 = ft_strlen(str2);
+	if (len1 < len2)
+		return (len2);
+	else
+		return (len1);
 }
