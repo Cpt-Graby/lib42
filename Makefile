@@ -74,8 +74,12 @@ SRCS_MATH	= ft_val_in_r.c \
 			  ft_cp_vec3.c
 
 SRCS_STRING	= ft_maxlstr.c \
+<<<<<<< HEAD
 			  ft_lensplit.c \
 			  ft_ascii_in_int.c
+=======
+			  ft_lensplit.c
+>>>>>>> 31c48b31a0855b39fafe62fd90c2067c98c4b06b
 
 SRCS_NAME	= ${addprefix ft_main/, ${SRCS_MAIN}} \
 		  ${addprefix ft_lst/, ${SRCS_LST}} \
