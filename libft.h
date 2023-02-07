@@ -29,10 +29,6 @@
 # include "includes/ft_read.h"
 # include "includes/ft_math.h"
 # include "includes/ft_printf.h"
-<<<<<<< HEAD
-=======
-# include "includes/ft_math.h"
->>>>>>> 31c48b31a0855b39fafe62fd90c2067c98c4b06b
 # include "includes/ft_string.h"
 
 #endif
