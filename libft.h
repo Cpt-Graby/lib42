@@ -6,7 +6,7 @@
 /*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:34:09 by agonelle          #+#    #+#             */
-/*   Updated: 2022/11/08 12:49:22 by agonelle         ###   ########.fr       */
+/*   Updated: 2023/02/07 14:23:46 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,11 @@
 # include <stdarg.h>
 # include <stdio.h> 
 
-
 # include "includes/ft_main.h"
 # include "includes/ft_lst.h"
 # include "includes/ft_read.h"
+# include "includes/ft_math.h"
 # include "includes/ft_printf.h"
+# include "includes/ft_string.h"
 
 #endif
