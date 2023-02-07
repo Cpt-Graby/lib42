@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_free_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: mura </var/spool/mail/mura>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 16:04:09 by agonelle          #+#    #+#             */
-/*   Updated: 2022/11/23 15:17:34 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/10 14:39:40 by mura              #+#    #+#             */
+/*   Updated: 2022/11/10 15:16:54 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new_l)
+char	*ft_free_tab(void **tab, int len)
 {
-	new_l->next = *lst;
-	*lst = new_l;
+	int	i;
+
+	i = 0;
+	while (i < len)
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (NULL);
 }

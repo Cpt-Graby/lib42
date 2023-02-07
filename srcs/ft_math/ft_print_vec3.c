@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_print_vec3.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: kino </var/spool/mail/kino>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 16:04:09 by agonelle          #+#    #+#             */
-/*   Updated: 2022/11/23 15:17:34 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/14 14:38:12 by kino              #+#    #+#             */
+/*   Updated: 2022/11/17 19:08:08 by mura             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new_l)
+void	print_vec3(t_vec3 vec)
 {
-	new_l->next = *lst;
-	*lst = new_l;
+	ft_printf("(%d,", vec.x);
+	ft_printf("%d,", vec.y);
+	ft_printf("%d)\n", vec.z);
 }

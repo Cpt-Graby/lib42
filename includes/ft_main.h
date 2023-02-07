@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_main.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 11:34:09 by agonelle          #+#    #+#             */
-/*   Updated: 2022/11/02 09:36:54 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/08 16:29:50 by agonelle          #+#    #+#             */
+/*   Updated: 2022/12/06 16:30:56 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_free_tab(void **tab, int len);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);

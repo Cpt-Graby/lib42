@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_val_in_r.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agonelle <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: agonelle <agonelle@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 16:04:09 by agonelle          #+#    #+#             */
-/*   Updated: 2022/11/23 15:17:34 by agonelle         ###   ########.fr       */
+/*   Created: 2022/11/10 15:10:09 by agonelle          #+#    #+#             */
+/*   Updated: 2022/11/22 13:07:51 by agonelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
-
-void	ft_lstadd_front(t_list **lst, t_list *new_l)
+int	ft_val_in_r(int v, int min, int max)
 {
-	new_l->next = *lst;
-	*lst = new_l;
+	if (v >= min && v <= max)
+		return (1);
+	else
+		return (0);
 }
